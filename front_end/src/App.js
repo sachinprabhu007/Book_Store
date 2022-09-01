@@ -10,6 +10,8 @@ import RecommendedBooks from "./components/RecommendedBooks"
 import Login from "./components/Login"
 import SignUp from "./components/SignUp"
 import Authors from "./components/Authors"
+import Explore from "./components/Explore";
+import Search from "./components/Search";
 
 class App extends Component {
   render() {
@@ -23,6 +25,8 @@ class App extends Component {
           <Route  exact path="/authors" component={Authors} /> 
           <Route  exact path="/login" component={Login} />
           <Route  exact path="/sign-up" component={SignUp} />
+          <Route  exact path="/explore" component={Explore} />
+          <Route  exact path="/search" component={Search} />
       </BrowserRouter>
        
     );

@@ -46,15 +46,25 @@ class NavBar extends Component{
                             Login
                         </Link>
                     </li>
+                    {/* <li className="navbar-item">
+                        <Link className="nav-link" to="/explore">
+                            Explore
+                        </Link>
+                    </li> */}
+                    <li className="navbar-item">
+                        <Link className="nav-link" to="/search">
+                           Search
+                        </Link>
+                    </li>
                 </ul>
 
 
-                <div className="search-container">
+                {/* <div className="search-container">
                 <form className='search-form'>
                     <input type="text" placeholder="Search.." name="search"/>
                     <button type="submit">Search</button>
                 </form>
-                </div>
+                </div> */}
                 </div>
              
             </nav>
