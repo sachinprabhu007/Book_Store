@@ -19,8 +19,8 @@ class FavoriteBooks extends Component{
                         <div class="card-body">
                         <h5 class="card-title">Javascript</h5>
                         <p class="card-text">Javascript From Basic TO Advance Please Add to Favorites.</p>
-                        <a href="#" class="btn btn-success btn-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="Add to Favorites">Add</a> &nbsp; &nbsp;      
-                        <a href="#" class="btn btn-danger btn-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="Delete from Favorites">Delete</a>                        </div>
+                        {/* <a href="#" class="btn btn-success btn-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="Add to Favorites">Add</a> &nbsp; &nbsp;       */}
+                        <a href="#" class="btn btn-danger btn-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="Remove from Favorites">Remove</a>                        </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -29,8 +29,8 @@ class FavoriteBooks extends Component{
                         <div class="card-body">
                         <h5 class="card-title">Javascript</h5>
                         <p class="card-text">Javascript From Basic TO Advance Please Add to Favorites.</p>
-                        <a href="#" class="btn btn-success btn-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="Add to Favorites">Add</a> &nbsp; &nbsp;      
-                        <a href="#" class="btn btn-danger btn-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="Delete from Favorites">Delete</a>                        </div>
+                        {/* <a href="#" class="btn btn-success btn-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="Add to Favorites">Add</a> &nbsp; &nbsp;       */}
+                        <a href="#" class="btn btn-danger btn-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="Remove from Favorites">Remove</a>                        </div>
                     </div>
                  </div>
                  <div class="col-sm-3">
@@ -39,8 +39,8 @@ class FavoriteBooks extends Component{
                         <div class="card-body">
                         <h5 class="card-title">Javascript</h5>
                         <p class="card-text">Javascript From Basic TO Advance Please Add to Favorites.</p>
-                        <a href="#" class="btn btn-success btn-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="Add to Favorites">Add</a> &nbsp; &nbsp;      
-                        <a href="#" class="btn btn-danger btn-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="Delete from Favorites">Delete</a>                        </div>
+                        {/* <a href="#" class="btn btn-success btn-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="Add to Favorites">Add</a> &nbsp; &nbsp;       */}
+                        <a href="#" class="btn btn-danger btn-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="Remove from Favorites">Remove</a>                        </div>
                         
                     </div>
                  </div>
@@ -50,8 +50,8 @@ class FavoriteBooks extends Component{
                         <div class="card-body">
                         <h5 class="card-title">Javascript</h5>
                         <p class="card-text">Javascript From Basic TO Advance Please Add to Favorites.</p>
-                        <a href="#" class="btn btn-success btn-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="Add to Favorites">Add</a> &nbsp; &nbsp;      
-                        <a href="#" class="btn btn-danger btn-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="Delete from Favorites">Delete</a>                        </div>
+                        {/* <a href="#" class="btn btn-success btn-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="Add to Favorites">Add</a> &nbsp; &nbsp;       */}
+                        <a href="#" class="btn btn-danger btn-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="Remove from Favorites">Remove</a>                        </div>
                     </div>
                  </div>
             </div>

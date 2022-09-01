@@ -20,39 +20,62 @@ class Authors extends Component{
             <div className="container-fluid bg-3 text-center">    
                  <h3>Explore books based on Authors </h3><br></br>
             
-            <div class="row ">
-                <div class="col-sm-3">
-                    <div class="card">
-                        <img src={jo} class="card-img-top" alt="JK Rowling" title='JK Rowling' /><br></br>
-                        <div class="card-body">
-                        <h5 class="card-title">JK Rowling </h5>
-                        {/* <a href="#" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Explore" onClick="">Explore</a>    */}
-                        <a class="btn btn-info" > <Link to="/explore"> Explore </Link> </a>                      </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="card">
-                        <img src={neil} class="card-img-top" alt="Neil Gaiman" title='Neil Gaiman' /><br></br>
-                        <div class="card-body">
-                        <h5 class="card-title">Neil Gaiman</h5>
-                        <a href="#" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Explore">Explore</a>  
+            <div className="row ">
+                <div className="col-sm-3">
+                    <div className="card">
+                        <img src={jo} className="card-img-top" alt="JK Rowling" title='JK Rowling' /><br></br>
+                        <div className="card-body">
+                        <h5 className="card-title">JK Rowling </h5>
+                        {/* <a href="#" className="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Explore" onClick="">Explore</a>    */}
+                        <a className="btn btn-info" > <Link to={{
+                            pathname : "/explore",
+                            state : {name: 'JK Rowling'}
+                            }}> Explore
+
+                             </Link> 
+                             </a>                     
+                       </div>
+                    </div>    
+                 </div>
+
+                <div className="col-sm-3">
+                    <div className="card">
+                        <img src={neil} className="card-img-top" alt="Neil Gaiman" title='Neil Gaiman' /><br></br>
+                        <div className="card-body">
+                        <h5 className="card-title">Neil Gaiman</h5>
+                        {/* <a href="#" className="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Explore">Explore</a>   */}
+                        <a className="btn btn-info" > <Link to={{
+                            pathname : "/explore",
+                            state : {name: 'Neil Gaiman'}
+                            }}> Explore 
+                            </Link> </a>
                                            </div>
                     </div>
                  </div>
-                 <div class="col-sm-3">
-                    <div class="card">
-                        <img src={apj} class="card-img-top" alt="APJ Abudl Kalam" title='APJ Abudl Kalam' /><br></br>
-                        <div class="card-body">
-                        <h5 class="card-title">A.P.J Abdul Kalam</h5>
-                        <a href="#" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Explore">Explore</a>                        </div>
+                 <div className="col-sm-3">
+                    <div className="card">
+                        <img src={apj} className="card-img-top" alt="APJ Abudl Kalam" title='APJ Abudl Kalam' /><br></br>
+                        <div className="card-body">
+                        <h5 className="card-title">A.P.J Abdul Kalam</h5>
+                        {/* <a href="#" className="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Explore">Explore</a>    */}
+                        <a className="btn btn-info" > <Link to={{
+                            pathname : "/explore",
+                            state : {name: 'A.P.J Abdul Kalam'}
+                            }}> Explore </Link> </a>
+                                             </div>
                     </div>
                  </div>
-                 <div class="col-sm-3">
-                    <div class="card">
-                        <img src={sudha} class="card-img-top" alt="Sudha Murthy" title='Sudha Murthy' /><br></br>
-                        <div class="card-body">
-                        <h5 class="card-title">Sudha Murthy</h5>
-                        <a href="#" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Explore">Explore</a>                        </div>
+                 <div className="col-sm-3">
+                    <div className="card">
+                        <img src={sudha} className="card-img-top" alt="Sudha Murthy" title='Sudha Murthy' /><br></br>
+                        <div className="card-body">
+                        <h5 className="card-title">Sudha Murthy</h5>
+                        {/* <a href="#" className="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Explore">Explore</a>           */}
+                        <a className="btn btn-info" > <Link to={{
+                            pathname : "/explore",
+                            state : {name: 'Sudha Murthy'}
+                            }}> Explore </Link> </a>
+                                      </div>
                     </div>
                  </div>
             </div>
