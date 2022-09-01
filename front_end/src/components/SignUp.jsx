@@ -1,0 +1,81 @@
+import React,{Component} from 'react'
+
+class SignUp extends Component{
+
+    
+    render(){
+
+        function login() {
+            var name = document.querySelector("#name").value;
+            var email =
+                document.querySelector("#emailaddress").value;
+            var password =
+                document.querySelector('#password').value;
+            var cpassword = document.querySelector('#passwordretype').value;
+            var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
+            console.log(email)
+            if (name == "") {
+                alert("Name can't be left blank");
+                return false;
+            }
+            else if (email == "" || !regEmail.test(email)) {
+                alert("Please enter a valid e-mail address.");
+        
+                return false;
+            }
+            else if (password == "") {
+                alert("Please enter your password");
+                return;
+            }
+            else if (password.length < 6) {
+                alert("Password should be atleast 6 character long");
+                return;
+            }
+        
+            else if (cpassword != password) {
+                alert("Confirm Password and password are not the same");
+                return;
+            }
+            else if (cpassword == "") {
+                alert("Confirm password cannot be left empty");
+                return;
+            }
+            else {
+                alert("User registered");
+                window.location.href="/login";
+            }
+        }
+
+        
+        return(
+            <div className="SignUp">
+                <h3> Welcome to Sign-Up Page </h3> 
+
+                <div className="text-center mt-5">
+            <form style={{ maxWidth: "350px", margin: "auto" }} name="Regform">
+                <img style={{ height: "72px" }} className="mt-4 mb-4 "
+                    src="https://cdn1.vectorstock.com/i/1000x1000/74/40/education-open-book-icon-vector-10187440.jpg" />
+                <h3 className="mb-3 font-weight-normal">Register Page</h3>
+                <div className="mb-3">
+                    <input required autoFocus type="text" id="name" placeholder="Name" className="form-control"></input>
+                </div>
+                <div className="mb-3">
+                    <input required autoFocus type="email" id="emailaddress" placeholder="Email Address" className="form-control"></input>
+                </div>
+                <div className="mb-3">
+                    <input required autoFocus type="password" id="password" placeholder="Password(Atleast 6 characters)" className="form-control"></input>
+                </div>
+                <div>
+                    <input required autoFocus type="password" id="passwordretype" placeholder="Confirm Password" className="form-control"></input>
+                </div>
+                <div className="mt-5"><button type="reset" className="btn btn-lg btn-primary w-100" onClick={login}>Sign
+                    In</button></div>
+            </form>
+        </div>
+
+            </div>
+        )
+    }
+}
+
+export default SignUp;
