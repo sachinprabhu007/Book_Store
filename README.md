@@ -1,5 +1,5 @@
 # Book_Store
-This repository contains code for Implementing a Dashboard for Book Store using React 
+This repository contains code for Implementing a Full Stack Application for Book Store using React and SpringBoot 
 
 Screenshots: 
 
