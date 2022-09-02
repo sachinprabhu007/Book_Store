@@ -1,4 +1,5 @@
 import React,{Component} from 'react'
+import axios from "axios";
 
 class SignUp extends Component{
 
@@ -41,8 +42,43 @@ class SignUp extends Component{
                 return;
             }
             else {
-                alert("User registered");
-                window.location.href="/login";
+
+                const userobj = {
+                    name: name,
+                    email: email,
+                    password: password,
+                }
+                //console.log(userobj)
+                axios.get("http://localhost:8080/users").then(response => {
+                    if (response.data != null) {
+                        let arr = [...response.data];
+                        let flag = 0;
+                        for (let i = 0; i < arr.length; i++) {
+                            let ele = arr[i];
+                            if (ele["email"] == email) {
+                                flag = 1;
+                                break
+                            }
+                        }
+                        if (flag == 0) {
+                            axios.post("http://localhost:8080/addUser", userobj).then(response => console.log(response))
+                            alert("User registered");
+                            window.location.href = "/login";
+                        }
+                        else {
+                            flag = 0;
+                            alert("User already registered")
+                        }
+                    }
+                    else {
+                        axios.post("http://localhost:8080/addUser", userobj).then(response => console.log(response))
+                        alert("User registered");
+                        window.location.href = "/login";
+                    }
+                }).catch(err => console.log(err))    
+
+                // alert("User registered");
+                // window.location.href="/login";
             }
         }
 

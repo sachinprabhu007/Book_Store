@@ -56,6 +56,9 @@ class NavBar extends Component{
                            Search
                         </Link>
                     </li>
+                   
+
+
                 </ul>
 
 

@@ -13,6 +13,7 @@ import Authors from "./components/Authors"
 import Explore from "./components/Explore";
 import Search from "./components/Search";
 
+
 class App extends Component {
   render() {
     return (
@@ -27,6 +28,7 @@ class App extends Component {
           <Route  exact path="/sign-up" component={SignUp} />
           <Route  exact path="/explore" component={Explore} />
           <Route  exact path="/search" component={Search} />
+     
       </BrowserRouter>
        
     );
